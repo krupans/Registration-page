@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <style>
+        body{
+            background-image:linear-gradient(to left, rgb(53, 16, 163),rgb(197, 55, 188));
+        }
+        .flex{
+                display: flex;
+                justify-content:space-around;
+            }
+        
+        </style>
+        <script>
+            function myfunc(event)
+            {
+                event.preventDefault();
+                var gender=document.querySelector('input[name="gender"]:checked').value;
+                var name=document.getElementById("n1").value;
+                var uname=document.getElementById("u1").value;
+                var email=document.getElementById("e1").value;
+                var password=document.getElementById("p1").value;
+                var Confirm=document.getElementById("c1").value;
+                var mobile=document.getElementById("mno1").value;
+                //var gender=document.getElementById("gender").value;
+                document.write("<center><b>REGISTERED SUCCESSFULLY</b></center>");
+                document.write("<center>Your name is : ",name,"<br>");
+                document.write("<center>Your User name is : ",uname,"<br>");
+                document.write("<center>Your Email id is : ",email,"<br>");
+                document.write("<center>Your Mobile Number is : ",mobile,"<br>");
+                document.write("<center>Your Password is : ",password,"<br>");
+                document.write("<center>Your gender is : ",gender,"<br>");
+
+                
+            }
+        </script>
+    <title>form</title>
+    </head>
+    <body>
+        <center>
+        <div>
+            <form>
+            <h1 style="font-family: Rajdhani, sans-serif;">Registration</h1>
+            <table cellspacing="18" cellpadding="18" style="background-color: rgb(249, 244, 248);" style="font-family: Rajdhani, sans-serif;">
+                <tr>
+                <td>Full Name:<br><input type="text" name="textField" placeholder="Enter the fullName" id="n1"/></td>
+                <td>UserName:<br><input type="text" name="username" placeholder="Enterr the username" id="u1" /></td>
+                </tr>
+                <tr>
+                    <td>Email:<br><input type="email" name="email" placeholder="Enter the email" id="e1"/></td>
+                    <td>Mobile Number:<br><input type="tel" name="number" placeholder="Enter the mobile number"id="mno1"/></td>
+                    </tr>
+                    <tr>
+                        <td>Password:<br><input type="text" name="Password" placeholder="Enter the Password" id="p1"/></td>
+                        <td>Confirm Password:<br><input type="text" name="reenter password" placeholder="Confirm your password" id="c1"/></td>
+                        </tr>
+                        <div class="flex">
+                        <tr>
+                            <td colspan="2">Gender:<br><input type="radio" value="Male" name="gender" style="margin-left:40px"; checked/>Male
+                            <input type="radio" value="Female" name="gender"style="margin-left:40px"/>Female
+                            <input type="radio" value="not to say" name="gender" style="margin-left:40px"/>Prefer not to say</td>
+                        </tr>
+                        
+                        </div>
+                        <tr><center>
+                            <td colspan="2" ><input type="submit" value="Register" onclick="myfunc(event)" style="background-image:linear-gradient(to left, rgb(193, 13, 229),rgb(207, 127, 191)); padding:10px;padding-left:50px;position:relative;left:125px"/>
+                        </center>
+                        </tr>
+                    
+            </table>
+            </form>
+
+                </div>
+        </center>
+
+    </body>
+</html>
